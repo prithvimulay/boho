@@ -13,12 +13,6 @@ const ABOUT_ITEMS = [
   { label: "Clients", href: "/about#clients" },
 ];
 
-const GROUP_ITEMS = [
-  { label: "Studio", href: "/about#studio" },
-  { label: "Architecture", href: "/architecture" },
-  { label: "Interiors", href: "/interior" },
-];
-
 /* Pages that have a full-screen dark hero — nav starts white/transparent */
 const HERO_PAGES = ["/"];
 
@@ -80,7 +74,9 @@ export default function NavigationBar() {
               <NavDropdown label="About" items={ABOUT_ITEMS} />
             </li>
             <li>
-              <NavDropdown label="Group" items={GROUP_ITEMS} />
+              <Link href="/contact" className="hover:opacity-60 transition-opacity">
+                Contact
+              </Link>
             </li>
           </ul>
 
