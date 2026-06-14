@@ -37,7 +37,7 @@ const FOOTER_COLS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1a1a1a] text-white">
+    <footer className="bg-[var(--color-ink)] text-white">
       {/* Top CTA row */}
       <div className="max-w-[1400px] mx-auto px-6 pt-16 pb-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-b border-white/10">
         <Link
@@ -49,10 +49,10 @@ export default function Footer() {
 
         <Link
           href="/contact"
-          className="group flex items-center gap-4 text-4xl sm:text-5xl font-serif font-light hover:opacity-70 transition-opacity"
+          className="group flex items-center gap-4 text-4xl sm:text-5xl font-serif font-light transition-colors hover:text-[var(--color-accent)]"
         >
           Let&rsquo;s talk
-          <span className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-white/40 group-hover:bg-white group-hover:text-[#1a1a1a] transition-colors">
+          <span className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-white/40 group-hover:border-[var(--color-accent)] group-hover:bg-[var(--color-accent)] group-hover:text-[var(--color-ink)] transition-colors">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path
                 d="M3 13L13 3M13 3H5M13 3v8"
@@ -70,7 +70,7 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-10">
         {FOOTER_COLS.map((col) => (
           <div key={col.heading}>
-            <p className="text-xs tracking-widest uppercase text-white/40 mb-5">
+            <p className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-5">
               {col.heading}
             </p>
             <ul className="flex flex-col gap-3">

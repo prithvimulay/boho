@@ -22,7 +22,7 @@ export default function FeaturedSection() {
         {/* Intro card */}
         <FadeIn className="bg-[var(--color-bg-muted)] p-10 flex flex-col justify-between min-h-[420px]">
           <div>
-            <p className="text-xs tracking-widest uppercase text-[var(--color-fg-muted)] mb-8">
+            <p className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-8">
               Featured
             </p>
             <h2 className="font-serif text-4xl md:text-5xl font-light leading-tight mb-6">
@@ -38,7 +38,7 @@ export default function FeaturedSection() {
 
           <Link
             href="/architecture"
-            className="group inline-flex items-center gap-2 text-sm tracking-wide mt-10 hover:opacity-60 transition-opacity"
+            className="group inline-flex items-center gap-2 text-sm tracking-wide mt-10 transition-colors hover:text-[var(--color-accent)]"
           >
             View All Houses &amp; Villas
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">

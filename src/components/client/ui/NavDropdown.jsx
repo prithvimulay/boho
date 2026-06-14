@@ -19,7 +19,7 @@ export default function NavDropdown({ label, items }) {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1 text-sm tracking-wide hover:opacity-60 transition-opacity"
+        className="flex items-center gap-1 text-sm tracking-wide hover:text-[var(--color-accent)] transition-colors"
         aria-expanded={open}
       >
         {label}
@@ -47,7 +47,7 @@ export default function NavDropdown({ label, items }) {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="block px-5 py-3 text-sm hover:bg-[var(--color-bg-muted)] transition-colors"
+              className="block px-5 py-3 text-sm hover:bg-[var(--color-bg-muted)] hover:text-[var(--color-accent)] transition-colors"
             >
               {item.label}
             </Link>

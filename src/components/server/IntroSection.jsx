@@ -7,7 +7,7 @@ export default function IntroSection() {
   return (
     <section className="max-w-[1400px] mx-auto px-6 py-28 md:py-40">
       <FadeIn>
-        <p className="text-xs tracking-widest uppercase text-[var(--color-fg-muted)] mb-10">
+        <p className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-10">
           Boho Studio
         </p>
       </FadeIn>

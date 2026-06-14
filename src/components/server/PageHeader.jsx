@@ -9,7 +9,7 @@ export default function PageHeader({ eyebrow, title, description }) {
     <header className="max-w-[1400px] mx-auto px-6 pt-40 pb-16 md:pb-24">
       {eyebrow && (
         <FadeIn>
-          <p className="text-xs tracking-widest uppercase text-[var(--color-fg-muted)] mb-8">
+          <p className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-8">
             {eyebrow}
           </p>
         </FadeIn>

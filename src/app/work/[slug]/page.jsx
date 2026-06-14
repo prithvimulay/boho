@@ -46,7 +46,7 @@ export default async function ProjectPage({ params }) {
         <FadeIn>
           <Link
             href={backHref}
-            className="inline-flex items-center gap-2 text-sm text-[var(--color-fg-muted)] hover:text-[var(--color-fg)] transition-colors mb-12"
+            className="inline-flex items-center gap-2 text-sm text-[var(--color-fg-muted)] hover:text-[var(--color-accent)] transition-colors mb-12"
           >
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <path
@@ -78,17 +78,17 @@ export default async function ProjectPage({ params }) {
           <FadeIn delay={0.1}>
             <dl className="flex flex-col gap-6 text-sm">
               <div className="border-t border-[var(--color-border)] pt-4">
-                <dt className="text-[var(--color-fg-muted)] mb-1">Location</dt>
+                <dt className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-2">Location</dt>
                 <dd>{project.location}</dd>
               </div>
               {project.client && (
                 <div className="border-t border-[var(--color-border)] pt-4">
-                  <dt className="text-[var(--color-fg-muted)] mb-1">Client</dt>
+                  <dt className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-2">Client</dt>
                   <dd>{project.client}</dd>
                 </div>
               )}
               <div className="border-t border-[var(--color-border)] pt-4">
-                <dt className="text-[var(--color-fg-muted)] mb-1">Discipline</dt>
+                <dt className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-2">Discipline</dt>
                 <dd>
                   {project.category === "interior"
                     ? "Interior Design"

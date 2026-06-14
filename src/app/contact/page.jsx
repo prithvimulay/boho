@@ -22,7 +22,7 @@ export default function ContactPage() {
           {/* Intro */}
           <div>
             <FadeIn>
-              <p className="text-xs tracking-widest uppercase text-[var(--color-fg-muted)] mb-8">
+              <p className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-8">
                 Contact
               </p>
             </FadeIn>
@@ -44,7 +44,7 @@ export default function ContactPage() {
 
             <FadeIn delay={0.15}>
               <div className="mt-12">
-                <p className="text-xs tracking-widest uppercase text-[var(--color-fg-muted)] mb-4">
+                <p className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-4">
                   Follow
                 </p>
                 <ul className="flex gap-6">

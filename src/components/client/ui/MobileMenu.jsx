@@ -43,7 +43,7 @@ export default function MobileMenu({ open, onClose }) {
             key={link.href}
             href={link.href}
             onClick={onClose}
-            className="text-3xl font-serif py-3 border-b border-[var(--color-border)] hover:opacity-60 transition-opacity"
+            className="text-3xl font-serif py-3 border-b border-[var(--color-border)] hover:text-[var(--color-accent)] transition-colors"
           >
             {link.label}
           </Link>

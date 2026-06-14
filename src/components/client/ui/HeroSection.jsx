@@ -90,7 +90,7 @@ export default function HeroSection() {
       {/* Hero content */}
       <div className="absolute inset-0 flex flex-col justify-end pb-20 md:pb-24 pointer-events-none">
         <div className="w-full max-w-[1400px] mx-auto px-6">
-          <p className="text-white/60 text-xs tracking-[0.2em] uppercase mb-5">
+          <p className="text-[var(--color-accent)] text-xs tracking-[0.2em] uppercase mb-5">
             Architecture &amp; Interiors
           </p>
           <h1 className="text-white font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-[1.02] max-w-3xl">

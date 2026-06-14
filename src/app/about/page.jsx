@@ -21,7 +21,7 @@ export default function AboutPage() {
       <section id="essence" className="max-w-[1400px] mx-auto px-6 py-20 scroll-mt-24">
         <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-10">
           <FadeIn>
-            <p className="text-xs tracking-widest uppercase text-[var(--color-fg-muted)]">
+            <p className="text-xs tracking-widest uppercase text-[var(--color-accent)]">
               Essence
             </p>
           </FadeIn>
@@ -45,7 +45,7 @@ export default function AboutPage() {
         <div className="max-w-[1400px] mx-auto px-6 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-10">
             <FadeIn>
-              <p className="text-xs tracking-widest uppercase text-[var(--color-fg-muted)]">
+              <p className="text-xs tracking-widest uppercase text-[var(--color-accent)]">
                 Services
               </p>
             </FadeIn>
@@ -70,7 +70,7 @@ export default function AboutPage() {
       {/* Team */}
       <section id="team" className="max-w-[1400px] mx-auto px-6 py-24 scroll-mt-24">
         <FadeIn>
-          <p className="text-xs tracking-widest uppercase text-[var(--color-fg-muted)] mb-12">
+          <p className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-12">
             Team
           </p>
         </FadeIn>
@@ -102,7 +102,7 @@ export default function AboutPage() {
         className="max-w-[1400px] mx-auto px-6 py-24 scroll-mt-24"
       >
         <FadeIn>
-          <p className="text-xs tracking-widest uppercase text-[var(--color-fg-muted)] mb-12">
+          <p className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-12">
             Clients
           </p>
         </FadeIn>

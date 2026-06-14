@@ -51,7 +51,7 @@ export default function NavigationBar() {
               isLight ? "text-white" : "text-[var(--color-fg)]"
             }`}
           >
-            BOHO<sup className="text-xs ml-0.5">®</sup>
+            BOHO<sup className="text-xs ml-0.5 text-[var(--color-accent)]">®</sup>
           </Link>
 
           {/* Desktop nav */}
@@ -61,12 +61,12 @@ export default function NavigationBar() {
             }`}
           >
             <li>
-              <Link href="/architecture" className="hover:opacity-60 transition-opacity">
+              <Link href="/architecture" className="hover:text-[var(--color-accent)] transition-colors">
                 Architecture
               </Link>
             </li>
             <li>
-              <Link href="/interior" className="hover:opacity-60 transition-opacity">
+              <Link href="/interior" className="hover:text-[var(--color-accent)] transition-colors">
                 Interiors
               </Link>
             </li>
@@ -74,7 +74,7 @@ export default function NavigationBar() {
               <NavDropdown label="About" items={ABOUT_ITEMS} />
             </li>
             <li>
-              <Link href="/contact" className="hover:opacity-60 transition-opacity">
+              <Link href="/contact" className="hover:text-[var(--color-accent)] transition-colors">
                 Contact
               </Link>
             </li>

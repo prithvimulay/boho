@@ -1,13 +1,30 @@
 @import "tailwindcss";
 
 /* Expose design tokens as Tailwind v4 theme values so utilities like
-   font-serif, bg-fg, text-fg-muted, border-border resolve correctly. */
+   font-serif, bg-fg, text-fg-muted, border-border resolve correctly.
+
+   Palette
+   --------------------------------------------------------------------
+   #ffffff  white        — primary surface (dominant)
+   #020129  deep navy    — primary ink / foreground
+   #c39e52  gold         — accent (eyebrows, hovers, CTAs)
+   #f7f5f0  warm white   — muted surface
+   #ede9df  light beige  — soft surface / borders
+   #b0aaa0  taupe        — decorative muted (dividers, faint type)
+   #1c1b18  near-black   — deep surface (footer)
+   -------------------------------------------------------------------- */
 @theme {
   --color-bg: #ffffff;
-  --color-bg-muted: #f5f2ee;
-  --color-fg: #1a1a1a;
-  --color-fg-muted: #6b6b6b;
-  --color-border: #e5e0d8;
+  --color-bg-muted: #f7f5f0;
+  --color-bg-soft: #ede9df;
+  --color-ink: #1c1b18;
+  --color-fg: #020129;
+  /* Readable mid-tone derived from the navy ink for body copy on white. */
+  --color-fg-muted: #5a5a6b;
+  --color-taupe: #b0aaa0;
+  --color-border: #ede9df;
+  --color-accent: #c39e52;
+  --color-accent-soft: #d8bd86;
   --font-serif: "Canela", Georgia, "Times New Roman", serif;
   --font-sans: "Inter", system-ui, sans-serif;
 }
@@ -48,6 +65,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* Reusable gold eyebrow label */
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
 }
 
 /* Lenis smooth scroll */

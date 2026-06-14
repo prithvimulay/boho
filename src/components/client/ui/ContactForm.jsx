@@ -81,7 +81,7 @@ export default function ContactForm() {
             required={f.required}
             value={values[f.name]}
             onChange={update}
-            className="w-full bg-transparent border-b border-[var(--color-border)] pb-2 outline-none focus:border-[var(--color-fg)] transition-colors"
+            className="w-full bg-transparent border-b border-[var(--color-border)] pb-2 outline-none focus:border-[var(--color-accent)] transition-colors"
           />
         </div>
       ))}
@@ -99,7 +99,7 @@ export default function ContactForm() {
           rows={4}
           value={values.message}
           onChange={update}
-          className="w-full bg-transparent border-b border-[var(--color-border)] pb-2 outline-none focus:border-[var(--color-fg)] transition-colors resize-none"
+          className="w-full bg-transparent border-b border-[var(--color-border)] pb-2 outline-none focus:border-[var(--color-accent)] transition-colors resize-none"
         />
       </div>
 
