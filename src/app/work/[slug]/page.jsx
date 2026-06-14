@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import PageTransition from "@/src/components/client/motion/PageTransition";
 import FadeIn from "@/src/components/client/motion/FadeIn";
-import LetsTalkPill from "@/src/components/client/ui/LetsTalkPill";
 import { PROJECTS, getProjectBySlug, GROUP_LABELS } from "@/src/lib/projects";
 
 export function generateStaticParams() {
@@ -109,7 +108,6 @@ export default async function ProjectPage({ params }) {
             alt=""
             className="w-full h-full object-cover"
           />
-          <LetsTalkPill className="absolute bottom-8 right-8" />
         </div>
       </section>
     </PageTransition>

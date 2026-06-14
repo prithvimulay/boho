@@ -1,7 +1,6 @@
 import Link from "next/link";
 import ProjectCardStatic from "@/src/components/server/ProjectCardStatic";
 import FadeIn from "@/src/components/client/motion/FadeIn";
-import LetsTalkPill from "@/src/components/client/ui/LetsTalkPill";
 import { getProjectsByCategory } from "@/src/lib/projects";
 
 /**
@@ -65,7 +64,7 @@ export default function FeaturedSection() {
         )}
       </div>
 
-      {/* Second row: two projects + floating pill over the right one */}
+      {/* Second row: two projects */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-4 md:mt-6">
         {pair.map((project, i) => (
           <FadeIn
@@ -74,9 +73,6 @@ export default function FeaturedSection() {
             className="relative aspect-[4/3]"
           >
             <ProjectCardStatic project={project} className="absolute inset-0" />
-            {i === pair.length - 1 && (
-              <LetsTalkPill className="absolute bottom-6 right-6" />
-            )}
           </FadeIn>
         ))}
       </div>
