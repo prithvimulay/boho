@@ -1,52 +1,41 @@
 @import "tailwindcss";
 
-/* Expose design tokens as Tailwind v4 theme values so utilities like
-   font-serif, bg-fg, text-fg-muted, border-border resolve correctly.
-
-   Palette
-   --------------------------------------------------------------------
-   #ffffff  white        — primary surface (dominant)
-   #020129  deep navy    — primary ink / foreground
-   #c39e52  gold         — accent (eyebrows, hovers, CTAs)
-   #f7f5f0  warm white   — muted surface
-   #ede9df  light beige  — soft surface / borders
-   #b0aaa0  taupe        — decorative muted (dividers, faint type)
-   #1c1b18  near-black   — deep surface (footer)
-   -------------------------------------------------------------------- */
+/* Expose design tokens as Tailwind v4 theme values */
 @theme {
   --color-bg: #ffffff;
   --color-bg-muted: #f7f5f0;
   --color-bg-soft: #ede9df;
-  --color-ink: #1c1b18;
+  --color-ink: #05002a;
   --color-fg: #020129;
-  /* Readable mid-tone derived from the navy ink for body copy on white. */
   --color-fg-muted: #5a5a6b;
   --color-taupe: #b0aaa0;
   --color-border: #ede9df;
   --color-accent: #c39e52;
   --color-accent-soft: #d8bd86;
-  --font-serif: "Canela", Georgia, "Times New Roman", serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* ==========================================================
+     FONT TOGGLE SECTION
+     Comment / Uncomment the blocks below to test each variant.
+     ========================================================== */
+
+  /* ---> VARIANT 1: Playfair Display (Elegant Serif matching the image) <--- */
+  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+
+  /* ---> VARIANT 2: Century Gothic (Geometric Sans) <--- */
+  /* To test Century Gothic, uncomment the two lines below and comment out Variant 1 above. */
+  
+  /*
+  --font-serif: "Century Gothic", "Twentieth Century", "Apple Gothic", sans-serif;
+  --font-sans: "Century Gothic", "Twentieth Century", "Apple Gothic", sans-serif;
+  */
+
+  /* ========================================================== */
 }
 
 :root {
-  --nav-height: 72px;
-}
-
-@font-face {
-  font-family: "Canela";
-  src: url("/fonts/Canela-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Canela";
-  src: url("/fonts/Canela-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  --nav-height: 100px;
 }
 
 @keyframes scrollbar {
@@ -59,7 +48,7 @@
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-soft);
   color: var(--color-fg);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;

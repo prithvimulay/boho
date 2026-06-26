@@ -5,14 +5,14 @@ import FadeIn from "@/src/components/client/motion/FadeIn";
  */
 export default function IntroSection() {
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-28 md:py-40">
+    <section className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-24 py-28 md:py-40">
       <FadeIn>
-        <p className="text-xs tracking-widest uppercase text-[var(--color-accent)] mb-10">
+        <p className="text-xs text-bold tracking-widest uppercase text-[var(--color-accent)] mb-10">
           Boho Studio
         </p>
       </FadeIn>
       <FadeIn delay={0.1}>
-        <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light leading-[1.15] max-w-4xl">
+        <h2 className="font-serif text-3xl md:text-5xl lg:text-5xl font-light leading-[1.15] max-w-4xl">
           We help the most discerning individuals and brands cut through
           complexity, enhance lifestyles, and exceed their goals.
         </h2>

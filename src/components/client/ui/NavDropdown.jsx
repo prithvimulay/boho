@@ -41,13 +41,13 @@ export default function NavDropdown({ label, items }) {
       </button>
 
       {open && (
-        <div className="absolute top-full left-0 mt-3 bg-white border border-[var(--color-border)] shadow-sm min-w-[160px] z-50">
+        <div className="absolute top-full left-0 mt-3 bg-[var(--color-ink)] border border-white/10 shadow-sm min-w-[160px] z-50">
           {items.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="block px-5 py-3 text-sm hover:bg-[var(--color-bg-muted)] hover:text-[var(--color-accent)] transition-colors"
+              className="block px-5 py-3 text-sm text-white hover:bg-white/5 hover:text-[var(--color-accent)] transition-colors"
             >
               {item.label}
             </Link>

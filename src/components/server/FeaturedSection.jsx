@@ -15,7 +15,8 @@ export default function FeaturedSection() {
   const pair = rest.slice(0, 2);
 
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-24">
+    <section className="w-full">
+    <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-24 py-24">
       {/* Top row: intro card + hero image */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-4 md:gap-6">
         {/* Intro card */}
@@ -76,6 +77,7 @@ export default function FeaturedSection() {
           </FadeIn>
         ))}
       </div>
+    </div>
     </section>
   );
 }

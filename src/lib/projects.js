@@ -13,7 +13,7 @@ export const PROJECTS = [
     client: "Private",
     category: "architecture",
     group: "houses-villas",
-    thumbnail: "/projects/bonanova.jpg",
+    thumbnail: "/orrizonte/ashwin/photo/NRD02246.jpg",
     excerpt:
       "A contemporary interpretation of Mediterranean living, set into the hills above Barcelona.",
   },
@@ -24,7 +24,7 @@ export const PROJECTS = [
     client: "Aegean Estates",
     category: "architecture",
     group: "houses-villas",
-    thumbnail: "/projects/antiparos.jpg",
+    thumbnail: "/orrizonte/ashwin/photo/NRD02255.jpg",
     excerpt:
       "A cluster of stone villas nestled into the Cycladic landscape, framing the sea.",
   },
@@ -35,7 +35,17 @@ export const PROJECTS = [
     client: "Private",
     category: "architecture",
     group: "houses-villas",
-    thumbnail: "/projects/punta-cana.jpg",
+    thumbnail: "/orrizonte/ashwin/photo/NRD02310.jpg",
+    excerpt: "Tropical modernism opening fully onto the beach and ocean beyond.",
+  },
+  {
+    slug: "punta-cana-villa",
+    title: "Punta Cana Villa",
+    location: "Punta Cana, Dominican Republic",
+    client: "Private",
+    category: "architecture",
+    group: "houses-villas",
+    thumbnail: "/orrizonte/ashwin/photo/NRD02411.jpg",
     excerpt: "Tropical modernism opening fully onto the beach and ocean beyond.",
   },
   {

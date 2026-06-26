@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const FOOTER_COLS = [
   {
@@ -40,11 +41,14 @@ export default function Footer() {
     <footer className="bg-[var(--color-ink)] text-white">
       {/* Top CTA row */}
       <div className="max-w-[1400px] mx-auto px-6 pt-16 pb-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-b border-white/10">
-        <Link
-          href="/"
-          className="font-serif text-2xl tracking-widest font-light"
-        >
-          BOHO<sup className="text-xs ml-0.5">®</sup>
+        <Link href="/">
+          <Image 
+            src="/color.jpg" 
+            alt="BOHO Logo" 
+            width={120} 
+            height={40} 
+            className="h-35 w-auto object-contain"
+          />
         </Link>
 
         <Link

@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import NavDropdown from "@/src/components/client/ui/NavDropdown";
 import MobileMenu from "@/src/components/client/ui/MobileMenu";
 
@@ -13,53 +13,26 @@ const ABOUT_ITEMS = [
   { label: "Clients", href: "/about#clients" },
 ];
 
-/* Pages that have a full-screen dark hero — nav starts white/transparent */
-const HERO_PAGES = ["/"];
-
 export default function NavigationBar() {
-  const pathname = usePathname();
-  const hasHero = HERO_PAGES.includes(pathname);
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  useEffect(() => {
-    function onScroll() {
-      setScrolled(window.scrollY > 20);
-    }
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const isLight = hasHero && !scrolled;
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-30 h-[var(--nav-height)] transition-all duration-300 ${
-          scrolled
-            ? "bg-white/95 backdrop-blur-sm border-b border-[var(--color-border)]"
-            : isLight
-            ? "bg-transparent"
-            : "bg-white border-b border-[var(--color-border)]"
-        }`}
-      >
+      <header className="fixed top-0 left-0 right-0 z-30 h-[var(--nav-height)] bg-[var(--color-ink)] ">
         <nav className="max-w-[1400px] mx-auto px-6 h-full flex items-center justify-between">
           {/* Logo */}
-          <Link
-            href="/"
-            className={`font-serif text-xl tracking-widest font-light transition-colors ${
-              isLight ? "text-white" : "text-[var(--color-fg)]"
-            }`}
-          >
-            BOHO<sup className="text-xs ml-0.5 text-[var(--color-accent)]">®</sup>
+          <Link href="/">
+            <Image
+              src="/color.jpg"
+              alt="BOHO Logo"
+              width={120}
+              height={40}
+              className="h-18 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop nav */}
-          <ul
-            className={`hidden md:flex items-center gap-8 text-sm tracking-wide transition-colors ${
-              isLight ? "text-white" : "text-[var(--color-fg)]"
-            }`}
-          >
+          <ul className="hidden md:flex items-center gap-8 text-sm tracking-wide text-white">
             <li>
               <Link href="/architecture" className="hover:text-[var(--color-accent)] transition-colors">
                 Architecture
@@ -82,7 +55,7 @@ export default function NavigationBar() {
 
           {/* Mobile hamburger */}
           <button
-            className={`md:hidden p-2 transition-colors ${isLight ? "text-white" : "text-[var(--color-fg)]"}`}
+            className="md:hidden p-2 text-white transition-colors"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
