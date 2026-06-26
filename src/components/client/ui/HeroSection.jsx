@@ -94,22 +94,20 @@ export default function HeroSection() {
             Architecture &amp; Interiors
           </p>
           <h1 className="text-white font-serif text-5xl sm:text-6xl md:text-7xl lg:text-6xl font-light leading-[1.02] max-w-3xl">
-            Beyond design.
-            <br />
-            Precision in every detail.
+            - Beyond design.
           </h1>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 right-6 flex flex-col items-center gap-2">
+      {/* <div className="absolute bottom-8 right-6 flex flex-col items-center gap-2">
         <span className="text-white/50 text-xs tracking-widest uppercase rotate-90 origin-center mb-4">
           Scroll
         </span>
         <div className="w-px h-12 bg-white/30 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full bg-white/80 animate-[scrollbar_1.5s_ease-in-out_infinite]" style={{ height: "40%" }} />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

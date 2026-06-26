@@ -1,4 +1,4 @@
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/src/components/client/providers/LenisProvider";
 import NavigationBar from "@/src/components/server/NavigationBar";
@@ -11,11 +11,10 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const playfair = Playfair_Display({
+const lora = Lora({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-lora",
 });
-
 export const metadata = {
   title: "BOHO Studio — Architecture & Interiors",
   description:
@@ -25,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     // 2. Inject the CSS variables into the HTML tag
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${lora.variable}`}>
       <body>
         <LenisProvider>
           <NavigationBar />

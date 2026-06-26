@@ -15,21 +15,15 @@
 
   /* ==========================================================
      FONT TOGGLE SECTION
-     Comment / Uncomment the blocks below to test each variant.
      ========================================================== */
 
   /* ---> VARIANT 1: Playfair Display (Elegant Serif matching the image) <--- */
-  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  /* --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif; */
+
+  --font-serif: var(--font-lora), Georgia, "Times New Roman", serif;
+
   --font-sans: var(--font-inter), system-ui, sans-serif;
-
-
-  /* ---> VARIANT 2: Century Gothic (Geometric Sans) <--- */
-  /* To test Century Gothic, uncomment the two lines below and comment out Variant 1 above. */
-  
-  /*
-  --font-serif: "Century Gothic", "Twentieth Century", "Apple Gothic", sans-serif;
-  --font-sans: "Century Gothic", "Twentieth Century", "Apple Gothic", sans-serif;
-  */
+ 
 
   /* ========================================================== */
 }
