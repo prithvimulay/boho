@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import PageTransition from "@/src/components/client/motion/PageTransition";
 import FadeIn from "@/src/components/client/motion/FadeIn";
+import BentoGallery from "@/src/components/client/ui/BentoGallery";
 import { PROJECTS, getProjectBySlug, GROUP_LABELS } from "@/src/lib/projects";
 
 export function generateStaticParams() {
@@ -99,17 +100,12 @@ export default async function ProjectPage({ params }) {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative max-w-[1400px] mx-auto px-6 pb-32">
-        <div className="relative aspect-[16/7] overflow-hidden bg-[var(--color-bg-muted)]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={project.thumbnail}
-            alt=""
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </section>
+      {/* Gallery */}
+      {project.array?.length > 0 && (
+        <section className="max-w-[1400px] mx-auto px-6 pb-32">
+          <BentoGallery images={project.array} title={project.title} />
+        </section>
+      )}
     </PageTransition>
   );
 }
