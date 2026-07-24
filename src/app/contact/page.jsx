@@ -4,7 +4,7 @@ import FadeIn from "@/src/components/client/motion/FadeIn";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Contact — BOHO Studio",
+  title: "Contact — BOHO Architects",
   description: "Let's talk. Book an appointment to discuss your next project.",
 };
 

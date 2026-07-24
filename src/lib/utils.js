@@ -9,9 +9,15 @@ export function cn(...inputs) {
 }
 
 /**
- * Build a WhatsApp deep link with a pre-filled message.
+ * Your business WhatsApp number (international format, digits only).
+ * All buildWhatsAppUrl() calls send here — change it in this one place.
  */
-export function buildWhatsAppUrl(phone, message) {
-  const digits = String(phone).replace(/\D/g, "");
-  return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
+const BUSINESS_WHATSAPP_NUMBER = "918446321379";
+
+/**
+ * Build a WhatsApp deep link with a pre-filled message.
+ * Always points to the business number above.
+ */
+export function buildWhatsAppUrl(message) {
+  return `https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }

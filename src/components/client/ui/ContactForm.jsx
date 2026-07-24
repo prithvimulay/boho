@@ -5,9 +5,8 @@ import { buildWhatsAppUrl } from "@/src/lib/utils";
 
 /**
  * Set your business WhatsApp number here (international format, digits only).
- * e.g. 919876543210 for +91 98765 43210
  */
-const WHATSAPP_NUMBER = "919876543210";
+// const WHATSAPP_NUMBER = "918446321379";
 
 const FIELDS = [
   { name: "firstName", label: "First name", type: "text", required: true, half: true },
