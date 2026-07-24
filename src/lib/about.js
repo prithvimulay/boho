@@ -29,12 +29,12 @@ export const SERVICES = [
   },
 ];
 
-export const TEAM = [
-  { name: "Elena Marlowe", role: "Founder & Principal Architect", photo: "/team/elena.jpg" },
-  { name: "Marco Devereux", role: "Head of Interiors", photo: "/team/marco.jpg" },
-  { name: "Sofia Nakamura", role: "Senior Architect", photo: "/team/sofia.jpg" },
-  { name: "Liam Castellano", role: "Project Director", photo: "/team/liam.jpg" },
-];
+// export const TEAM = [
+//   { name: "Elena Marlowe", role: "Founder & Principal Architect", photo: "/team/elena.jpg" },
+//   { name: "Marco Devereux", role: "Head of Interiors", photo: "/team/marco.jpg" },
+//   { name: "Sofia Nakamura", role: "Senior Architect", photo: "/team/sofia.jpg" },
+//   { name: "Liam Castellano", role: "Project Director", photo: "/team/liam.jpg" },
+// ];
 
 export const CLIENTS = [
   { quote: "They translated a vague idea into a home we never want to leave.", project: "Bonanova Residences" },

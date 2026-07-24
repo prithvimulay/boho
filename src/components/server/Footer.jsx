@@ -31,7 +31,7 @@ const FOOTER_COLS = [
     heading: "Contact",
     links: [
       { label: "Let's talk ↗", href: "/contact" },
-      { label: "WhatsApp ↗", href: "https://wa.me/91XXXXXXXXXX" },
+      { label: "WhatsApp ↗", href: "https://wa.me/918446321379" },
     ],
   },
 ];

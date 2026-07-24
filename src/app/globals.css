@@ -5,7 +5,8 @@
   --color-bg: #ffffff;
   --color-bg-muted: #f7f5f0;
   --color-bg-soft: #ede9df;
-  --color-ink: #05002a;
+  /* (Dark Blue Ink) */
+  --color-ink: #051e3a; 
   --color-fg: #020129;
   --color-fg-muted: #5a5a6b;
   --color-taupe: #b0aaa0;
