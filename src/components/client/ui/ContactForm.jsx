@@ -3,11 +3,6 @@
 import { useState } from "react";
 import { buildWhatsAppUrl } from "@/src/lib/utils";
 
-/**
- * Set your business WhatsApp number here (international format, digits only).
- */
-// const WHATSAPP_NUMBER = "918446321379";
-
 const FIELDS = [
   { name: "firstName", label: "First name", type: "text", required: true, half: true },
   { name: "surname", label: "Surname", type: "text", required: true, half: true },
@@ -59,7 +54,7 @@ export default function ContactForm() {
       `Phone: ${values.phone}\n` +
       (values.message ? `Message: ${values.message}` : "");
 
-    window.location.href = buildWhatsAppUrl(WHATSAPP_NUMBER, text);
+    window.location.href = buildWhatsAppUrl(text);
   }
 
   return (
