@@ -23,11 +23,11 @@ export default function NavigationBar() {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/color.jpg"
+              src="/BOHO LOGO_svg.svg"
               alt="BOHO Logo"
               width={120}
               height={40}
-              className="h-18 w-auto object-contain"
+              className="h-42 w-auto object-contain"
             />
           </Link>
 
