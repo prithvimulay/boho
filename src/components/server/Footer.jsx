@@ -42,13 +42,13 @@ export default function Footer() {
       {/* Top CTA row */}
       <div className="max-w-[1400px] mx-auto px-6 pt-16 pb-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-b border-white/10">
         <Link href="/">
-          <Image 
-            src="/color.jpg" 
+          {/* <Image 
+            src="/BOHO LOGO_svg.svg" 
             alt="BOHO Logo" 
             width={120} 
             height={40} 
-            className="h-35 w-auto object-contain"
-          />
+            className="h-55 w-auto object-contain"
+          /> */}
         </Link>
 
         <Link
