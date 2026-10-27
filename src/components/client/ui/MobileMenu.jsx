@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { label: "Architecture", href: "/architecture" },
   { label: "Interiors", href: "/interior" },
+  { label: "Architecture", href: "/architecture" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "Studio", href: "/about#studio" },

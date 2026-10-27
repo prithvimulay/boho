@@ -2,6 +2,7 @@ import PageHeader from "@/src/components/server/PageHeader";
 import PageTransition from "@/src/components/client/motion/PageTransition";
 import FadeIn from "@/src/components/client/motion/FadeIn";
 import { ESSENCE, SERVICES, TEAM, CLIENTS } from "@/src/lib/about";
+import { assetUrl } from "@/src/lib/assetUrl";
 
 export const metadata = {
   title: "About — BOHO Studio",
@@ -81,7 +82,7 @@ export default function AboutPage() {
                 <div className="aspect-square bg-[var(--color-bg-muted)] overflow-hidden mb-4">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={member.photo}
+                    src={assetUrl(member.photo)}
                     alt={member.name}
                     className="w-full h-full object-cover"
                   />

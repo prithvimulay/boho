@@ -41,7 +41,7 @@ export default function NavDropdown({ label, items }) {
       </button>
 
       {open && (
-        <div className="absolute top-full left-0 mt-3 bg-[var(--color-ink)] border border-white/10 shadow-sm min-w-[160px] z-50">
+        <div className="absolute top-full left-0 mt-3 bg-[#0e2256] border border-white/10 shadow-sm min-w-[160px] z-50">
           {items.map((item) => (
             <Link
               key={item.href}

@@ -4,6 +4,7 @@ import PageTransition from "@/src/components/client/motion/PageTransition";
 import FadeIn from "@/src/components/client/motion/FadeIn";
 import BentoGallery from "@/src/components/client/ui/BentoGallery";
 import { PROJECTS, getProjectBySlug, GROUP_LABELS } from "@/src/lib/projects";
+import { assetUrl } from "@/src/lib/assetUrl";
 
 export function generateStaticParams() {
   return PROJECTS.map((p) => ({ slug: p.slug }));
@@ -34,7 +35,7 @@ export default async function ProjectPage({ params }) {
       <div className="relative w-full h-[70vh] min-h-[420px] overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={project.thumbnail}
+          src={assetUrl(project.thumbnail)}
           alt={project.title}
           className="w-full h-full object-cover"
         />

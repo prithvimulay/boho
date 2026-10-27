@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { cn } from "@/src/lib/utils";
+import { assetUrl } from "@/src/lib/assetUrl";
 
 /**
  * A single project tile. Image with an overlaid title + location,
@@ -19,7 +20,7 @@ export default function ProjectCardStatic({ project, className = "", priority = 
       <div className="relative w-full h-full">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={thumbnail}
+          src={assetUrl(thumbnail)}
           alt={title}
           loading={priority ? "eager" : "lazy"}
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"

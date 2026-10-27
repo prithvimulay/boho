@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { assetUrl } from "@/src/lib/assetUrl";
 
 /**
  * Base grid is 10 columns wide on desktop so widths can be expressed as a
@@ -113,7 +114,7 @@ export default function BentoGallery({ images, title }) {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={src}
+              src={assetUrl(src)}
               alt={`${title} — image ${i + 1}`}
               loading="lazy"
               onLoad={(e) => handleLoad(src, e)}

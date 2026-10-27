@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NavDropdown from "@/src/components/client/ui/NavDropdown";
 import MobileMenu from "@/src/components/client/ui/MobileMenu";
+import { assetUrl } from "@/src/lib/assetUrl";
 
 const ABOUT_ITEMS = [
   { label: "Essence", href: "/about#essence" },
@@ -23,7 +24,7 @@ export default function NavigationBar() {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/BOHO LOGO_svg.svg"
+              src={assetUrl("/BOHO LOGO_svg.svg")}
               alt="BOHO Logo"
               width={120}
               height={40}
@@ -34,13 +35,13 @@ export default function NavigationBar() {
           {/* Desktop nav */}
           <ul className="hidden md:flex items-center gap-8 text-sm tracking-wide text-white">
             <li>
-              <Link href="/architecture" className="hover:text-[var(--color-accent)] transition-colors">
-                Architecture
+              <Link href="/interior" className="hover:text-[var(--color-accent)] transition-colors">
+                Interiors
               </Link>
             </li>
             <li>
-              <Link href="/interior" className="hover:text-[var(--color-accent)] transition-colors">
-                Interiors
+              <Link href="/architecture" className="hover:text-[var(--color-accent)] transition-colors">
+                Architecture
               </Link>
             </li>
             <li>
