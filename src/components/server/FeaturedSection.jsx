@@ -37,7 +37,7 @@ export default function FeaturedSection() {
           </div>
 
           <Link
-            href="/architecture"
+            href="/interior"
             className="group inline-flex items-center gap-2 text-sm tracking-wide mt-10 transition-colors hover:text-[var(--color-accent)]"
           >
             View All Houses &amp; Villas
